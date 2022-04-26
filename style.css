@@ -26,7 +26,15 @@
     width: 40px;
     margin-top: 20px;
     margin-left: 70px;
+    transition: 1s ease;
   }
+
+  .padlock:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+    }
 
   .AVR {
     font-size: 32px;
@@ -122,6 +130,16 @@
     margin-left: 70px;
     width: 333px;
   }
+
+  .picture-of-house:hover {
+    outline: 3px solid white ;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5px 4px white;
+    z-index: 20;
+  }
+  .picture-of-house:hover .picture-of-house:not(:hover) {
+    transform: scale(0.95);
+  }
   
   .right-side {
     background-color: #fff;
@@ -159,6 +177,16 @@
     margin-top: 20px;
     margin-left: 70px;
  }
+
+ .picture:hover {
+  outline: 3px solid white ;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5px 4px white;
+  z-index: 20;
+}
+.picture:hover .picture:not(:hover) {
+  transform: scale(0.95);
+}
 
  .smile-identity {
    display: inline-block;
